@@ -17,7 +17,7 @@ export default function Incidents() {
     const navegation = useNavigation();
     const incident = useRoute().params.incident;
     const message = `Olá, ${incident.name}. Visualizei o caso "${incident.title}" que você cadastrou no Be The Hero e gostaria de ajudar.`;
-    const ongWhatsappNumber = '+5584981662842';
+    const ongWhatsappNumber = incident.whatsappNumber;
 
     function navegateToIncidents() {
         navegation.goBack();
