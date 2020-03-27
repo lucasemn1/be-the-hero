@@ -1,5 +1,6 @@
 const express = require('express');
 const routes = express.Router();
+const { celebrate, Segments, Joi } = require('celebrate');
 
 // Controllers
 const ongsController = require('./controllers/OngController');
@@ -16,14 +17,43 @@ const sessonController = require('./controllers/SessionController');
 */
 
 routes.get('/ongs', ongsController.index);
-routes.post('/ongs/new', ongsController.create);
+routes.post('/ongs/new', celebrate({
+    [ Segments.BODY ]: Joi.object().keys({ 
+        name: Joi.string().required().min(1),
+        email: Joi.string().required().email(),
+        whatsapp_number: Joi.string().required().min(13),
+        city: Joi.string().required(),
+        uf: Joi.string().required().min(2).length(2)
+     })
+}), ongsController.create);
 
-routes.get('/incidents', incidentsController.index);
-routes.post('/incidents/new', incidentsController.create);
-routes.delete('/incidents/delete/:id', incidentsController.delete);
+routes.get('/incidents', celebrate({
+    [ Segments.PARAMS ]: Joi.object().keys({
+        id: Joi.number()
+    })
+}), incidentsController.index);
+routes.delete('/incidents/delete/:id', celebrate({
+    [ Segments.PARAMS ]: Joi.object().keys({
+        id: Joi.number().required()
+    })
+}), incidentsController.delete);
+routes.post('/incidents/new', celebrate({
+    [ Segments.HEADERS ]: Joi.object().keys({
+        authorization: Joi.string().required()
+    }).unknown(),
 
-routes.get('/profile', profileController.index);
+    [Segments.BODY]: Joi.object().keys({
+        title: Joi.string().required(),
+        description: Joi.string().required(),
+        value: Joi.number().required()
+    })
+}), incidentsController.create);
+routes.get('/profile', celebrate({
+    [ Segments.HEADERS ]: Joi.object().keys({
+        authorization: Joi.string().required()
+    }).unknown()
+}), profileController.index);
 
-routes.post('/session', sessonController.create);
+routes.post('/session', sessonController.create); //Fazer a verificação se tá vindo o id
 
 module.exports = routes;
