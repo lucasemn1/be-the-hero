@@ -3,13 +3,14 @@ const configuration = require('../../knexfile');
 
 let config;
 
-if( process.env.NODE_ENV === 'test' ) {
+if( process.env.NODE_ENV == 'test' ) {
     config = configuration.test;
+    console.log('Entrou em test');
 }
-else if ( process.env.NOVE_ENV === 'staging' ) {
+else if ( process.env.NODE_ENV == 'staging' ) {
     config = configuration.staging;
 }
-else if ( process.env.NOVE_ENV === 'production') {
+else if ( process.env.NODE_ENV == 'production') {
     config = configuration.production;
 }
 else {
