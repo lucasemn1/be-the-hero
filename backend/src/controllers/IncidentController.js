@@ -21,7 +21,14 @@ module.exports = {
             .limit(5)
             .offset( ( page - 1 ) * 5 );
 
-        res.header('X-Total-Count', count['count(*)']);
+        // console.log(count);
+
+        if(process.env.NODE_ENV == 'production') {
+            res.header('X-Total-Count', count);
+        } 
+        else {
+            res.header('X-Total-Count', count['count(*)']);
+        }
         return res.json( { incidents } );
     },
 

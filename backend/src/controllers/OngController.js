@@ -5,7 +5,7 @@ module.exports = {
     // Ok
     async index(req, res) {
         const ongs = await dbConnection('ongs').select('*');
-        
+
         return res.json( { ongs } );
     },
 

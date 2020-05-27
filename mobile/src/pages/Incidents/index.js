@@ -36,7 +36,7 @@ const Incidents = () => {
 
         setLoading(true);
         const response = await api.get(`incidents?page=${page}`);
-        setTotalItems(response.headers['x-total-count']);
+        setTotalItems(response.headers['X-Total-Count']);
         setIncidents([...incidents, ...response.data.incidents]);
         setPage(page+1);
         setLoading(false);
@@ -52,7 +52,7 @@ const Incidents = () => {
                 <Image source={logoImage} />
                 <Text style={style.headerText}>
                     <Text>
-                        Total de <Text style={style.headerTextBold}>{totalItems} casos</Text>
+                        Total de <Text style={style.headerTextBold}>{totalItems} { totalItems > 1 ? 'casos': 'caso'}</Text>
                     </Text>
                 </Text>
             </View>
