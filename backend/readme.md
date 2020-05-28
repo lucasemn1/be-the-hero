@@ -1,4 +1,4 @@
-# Be The Hero - backend
+# Be The Hero - BACKEND
 
 ## 💾 Modelo relacional do banco de dados.
 

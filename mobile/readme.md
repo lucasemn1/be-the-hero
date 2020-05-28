@@ -1,4 +1,4 @@
-# Be The Hero - FRONTEND
+# Be The Hero - MOBILE
 
 ![Aplicativo mobile do Be The Hero](https://raw.githubusercontent.com/lucasemn1/be-the-hero/master/mobile/assets/mobile.jpg)
     
