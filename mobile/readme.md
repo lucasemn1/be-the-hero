@@ -1,17 +1,15 @@
 # Be The Hero - FRONTEND
 
-![Frontend do Be The Hero](https://raw.githubusercontent.com/lucasemn1/be-the-hero/master/frontend/public/frontend.jpg)
-[Clique aqui para acessar online](https://bethehero01.netlify.app/)
-
+![Aplicativo mobile do Be The Hero](https://raw.githubusercontent.com/lucasemn1/be-the-hero/master/mobile/assets/mobile.jpg)
     
 ## 💻 Tecnologias 
 * NodeJS
-* ReactJS
-* React-icons
-* React-router-dom
+* Expo
+* React-native
 
 ## ❗Pré-requisitos
 * [Node.JS](https://nodejs.org/en/)
+* [Expo-CLI](https://expo.io/tools)
 
 ## 📝 Instalação
 
@@ -20,9 +18,9 @@
 $ git clone https://github.com/lucasemn1/be-the-hero
 ```
 
-2. Entre na pasta do frontend
+2. Entre na pasta do mobile
 ```
-$ cd [caminho até a pasta do projeto]/frontend
+$ cd [caminho até a pasta do projeto]/mobile
 ```
 
 3. Instale as dependências
@@ -32,7 +30,7 @@ $ npm install
 
 4. Inicie o servidor 
 ```
-$ npm start
+$ expo start
 ```
 
 ## Observações
