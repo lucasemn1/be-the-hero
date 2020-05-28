@@ -1,4 +1,4 @@
-# Be The Hero
+# Be The Hero - Apresentação
 
 ![Apresentação: versão web e mobile](https://raw.githubusercontent.com/lucasemn1/be-the-hero/master/apresentacao.jpg)
 
