@@ -1,7 +1,9 @@
-# Be The Hero - frontend
+# Be The Hero - FRONTEND
+
+[Clique aqui para acessar online](https://bethehero01.netlify.app/)
 
 ![Frontend do Be The Hero](https://raw.githubusercontent.com/lucasemn1/be-the-hero/master/frontend/public/frontend.jpg)
-
+    
 ## 💻 Tecnologias 
 * NodeJS
 * ReactJS
