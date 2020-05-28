@@ -6,7 +6,6 @@
 
 <div>
     O projeto trata-se de um sistema responsável por levar casos em que ONGs trabalham e precisam de apoio de pessoas.<br/>
-
     Uma vez cadastrada, a ONG pode registrar casos através da plataforma WEB. Com o caso cadastrado, o usuário é capaz de acompanhar os casos no aplicativo, e, uma vez tendo interesse em ajudar, pode se comunicar com a ONG através do e-mail ou WhatsApp.
 </div>
 
