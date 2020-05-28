@@ -1,7 +1,7 @@
 # Be The Hero - BACKEND
 
-Este backend está online e acessível na plataforma Heroku.
-Disponível [aqui](http://betheheroback2.herokuapp.com/ongs)
+Este backend está online e acessível na plataforma Heroku.<br/>
+Disponível [aqui](http://betheheroback2.herokuapp.com/ongs).
 
 ## 💾 Modelo relacional do banco de dados.
 
