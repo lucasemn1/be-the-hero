@@ -1,68 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Be The Hero - frontend
 
-## Available Scripts
+![Frontend do Be The Hero](https://raw.githubusercontent.com/lucasemn1/be-the-hero/master/frontend/public/frontend.jpg)
 
-In the project directory, you can run:
+## 💻 Tecnologias 
+* NodeJS
+* ReactJS
+* React-icons
+* React-router-dom
 
-### `npm start`
+## ❗Pré-requisitos
+* [Node.JS](https://nodejs.org/en/)
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📝 Instalação
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. Clone o projeto
+```
+$ git clone https://github.com/lucasemn1/be-the-hero
+```
 
-### `npm test`
+2. Entre na pasta do frontend
+```
+$ cd [caminho até a pasta do projeto]/frontend
+```
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Instale as dependências
+```
+$ npm install
+```
 
-### `npm run build`
+4. Inicie o servidor 
+```
+$ npm start
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Observações
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+1. Por padrão este projeto utiliza o backend hospedado no Heroku. Caso deseje utilizar o backend local, altere o baseUrl no arquivo frontend/src/services/api.js para:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+````
+    http://localhost:5000
+````
 
-### `npm run eject`
+2. O servidor do backend necessita estar funcionando para o frontend poder se conectar a ele, caso não seja optado usar o Heroku.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+<hr/>
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+##### Desenvolvido por Lucas Emanuel Nascimento Nóbrega Dias 😁.
+##### Visite meu [Linkedin! 🌐🗯](https://www.linkedin.com/in/lucas-emn/) 

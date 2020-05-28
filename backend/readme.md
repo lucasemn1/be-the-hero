@@ -1,5 +1,9 @@
 # Be The Hero - backend
 
+## 💾 Modelo relacional do banco de dados.
+
+![Modelo relacional do banco de dados](https://raw.githubusercontent.com/lucasemn1/be-the-hero/master/backend/docs/database_model.png)
+
 ## 💻 Tecnologias 
 * NodeJS
 * Knex
@@ -35,10 +39,6 @@ $ npm test
 ```
 $ npm start
 ```
-
-## 💾 Modelo relacional do banco de dados.
-
-![GitHub Logo](https://raw.githubusercontent.com/lucasemn1/be-the-hero/master/backend/docs/database_model.png)
 
 <hr/>
 
